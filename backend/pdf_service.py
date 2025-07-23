@@ -196,7 +196,7 @@ class PDFService:
         # Lifestyle Tips
         content.append(Paragraph("🌤️ Lifestyle Modifications", self.styles['SectionHeader']))
         for tip in health_guide.lifestyle_tips:
-            content.append(Paragraph(f"• {tip}", self.styles['BodyText']))
+            content.append(Paragraph(f"• {tip}", self.styles['CustomBodyText']))
         content.append(Spacer(1, 15))
         
         # When to See Doctor
