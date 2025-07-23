@@ -190,7 +190,7 @@ class PDFService:
         # Dietary Advice
         content.append(Paragraph("🥗 Nutritional Recommendations", self.styles['SectionHeader']))
         for advice in health_guide.dietary_advice:
-            content.append(Paragraph(f"• {advice}", self.styles['BodyText']))
+            content.append(Paragraph(f"• {advice}", self.styles['CustomBodyText']))
         content.append(Spacer(1, 15))
         
         # Lifestyle Tips
