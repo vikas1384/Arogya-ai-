@@ -162,7 +162,7 @@ class PDFService:
         
         # Symptom Summary
         content.append(Paragraph("🩺 Understanding Your Symptoms", self.styles['SectionHeader']))
-        content.append(Paragraph(health_guide.symptom_summary, self.styles['BodyText']))
+        content.append(Paragraph(health_guide.symptom_summary, self.styles['CustomBodyText']))
         content.append(Spacer(1, 15))
         
         # Possible Conditions
