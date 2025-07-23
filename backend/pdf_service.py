@@ -228,16 +228,16 @@ class PDFService:
             
             # Ingredients
             ingredients_text = "Ingredients: " + ", ".join(remedy.ingredients)
-            content.append(Paragraph(ingredients_text, self.styles['BodyText']))
+            content.append(Paragraph(ingredients_text, self.styles['CustomBodyText']))
             
             # Preparation
-            content.append(Paragraph(f"<b>Preparation:</b> {remedy.preparation}", self.styles['BodyText']))
+            content.append(Paragraph(f"<b>Preparation:</b> {remedy.preparation}", self.styles['CustomBodyText']))
             
             # Usage
-            content.append(Paragraph(f"<b>Usage:</b> {remedy.usage}", self.styles['BodyText']))
+            content.append(Paragraph(f"<b>Usage:</b> {remedy.usage}", self.styles['CustomBodyText']))
             
             # Benefits
-            content.append(Paragraph(f"<b>Benefits:</b> {remedy.benefits}", self.styles['BodyText']))
+            content.append(Paragraph(f"<b>Benefits:</b> {remedy.benefits}", self.styles['CustomBodyText']))
             
             content.append(Spacer(1, 10))
         
