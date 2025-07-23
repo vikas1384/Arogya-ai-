@@ -252,7 +252,7 @@ class PDFService:
         content.append(Paragraph("💬 Conversation Summary", self.styles['SectionHeader']))
         content.append(Paragraph(
             "This section contains a summary of your conversation with Dr. Arogya for your doctor's reference.",
-            self.styles['BodyText']
+            self.styles['CustomBodyText']
         ))
         content.append(Spacer(1, 15))
         
