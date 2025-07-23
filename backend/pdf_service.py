@@ -218,7 +218,7 @@ class PDFService:
         content.append(Paragraph(
             "These time-tested traditional remedies have been passed down through generations. "
             "While they may provide comfort, they should complement, not replace, medical treatment.",
-            self.styles['BodyText']
+            self.styles['CustomBodyText']
         ))
         content.append(Spacer(1, 12))
         
