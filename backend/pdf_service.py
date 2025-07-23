@@ -202,7 +202,7 @@ class PDFService:
         # When to See Doctor
         content.append(Paragraph("🆘 When to Seek Medical Care", self.styles['SectionHeader']))
         for guideline in health_guide.when_to_see_doctor:
-            content.append(Paragraph(f"• {guideline}", self.styles['BodyText']))
+            content.append(Paragraph(f"• {guideline}", self.styles['CustomBodyText']))
         content.append(Spacer(1, 20))
         
         return content
