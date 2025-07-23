@@ -728,10 +728,22 @@ metadata:
   run_ui: false
 
 test_plan:
-  current_focus: []
-  stuck_tasks: []
+  current_focus:
+    - "Frontend-Backend Integration - AI message processing not working"
+    - "Chat Interface with Progress Tracking - AI responses failing"
+    - "Emergency Alert Modal - Cannot test due to AI issue"
+    - "Health Guide Display - Cannot test due to AI issue"
+    - "PDF Download Integration - Cannot test due to AI issue"
+    - "Feedback Form Modal - Cannot test due to AI issue"
+  stuck_tasks:
+    - "Frontend-Backend Integration - AI message processing"
   test_all: true
   test_priority: "high_first"
+  next_steps:
+    - "Fix AI response integration between frontend and backend"
+    - "Debug POST /api/sessions/{id}/messages endpoint"
+    - "Verify OpenRouter API integration is working"
+    - "Test complete user journey after AI fix"
 
 agent_communication:
   - agent: "testing"
