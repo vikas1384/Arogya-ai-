@@ -402,7 +402,7 @@ system_capabilities:
     - "Accessibility features"
     - "Feedback collection system"
 
-user_problem_statement: "Test the complete Dr. Arogya backend system that has been implemented. This includes testing all API endpoints, AI integration, database operations, PDF generation, emergency detection, and multi-language support."
+user_problem_statement: "Test the complete Dr. Arogya user journey to ensure it's fully functional for users. This includes testing language selection, welcome message, conversation flow, emergency detection, health guide generation, PDF download, and feedback system."
 
 backend:
   - task: "Health Check API Endpoint"
