@@ -174,7 +174,7 @@ class PDFService:
         # OTC Recommendations  
         content.append(Paragraph("💊 Over-the-Counter Care Suggestions", self.styles['SectionHeader']))
         for recommendation in health_guide.otc_recommendations:
-            content.append(Paragraph(f"• {recommendation}", self.styles['BodyText']))
+            content.append(Paragraph(f"• {recommendation}", self.styles['CustomBodyText']))
         content.append(Spacer(1, 15))
         
         # Warning Signs
