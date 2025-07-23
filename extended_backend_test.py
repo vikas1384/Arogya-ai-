@@ -117,8 +117,8 @@ def test_complete_health_consultation():
             
             print(f"✅ PDF generated: {filename}")
             
-            # Try to download the PDF
-            download_response = requests.get(f"{base_url}{pdf_url}")
+            # Try to download the PDF using the API endpoint
+            download_response = requests.get(f"{api_url}/reports/{filename}")
             
             if download_response.status_code == 200 and download_response.headers.get('content-type') == 'application/pdf':
                 print(f"✅ PDF download successful ({len(download_response.content)} bytes)")
