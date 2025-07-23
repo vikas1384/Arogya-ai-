@@ -150,7 +150,7 @@ const ChatInterface = ({ sessionId, language, onEmergencyDetected, onHealthGuide
             Consultation Progress
           </span>
           <span className="text-sm text-indigo-600 font-semibold">
-            {getProgress()}%
+            {getStageProgress()}%
           </span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
