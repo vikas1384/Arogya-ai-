@@ -168,7 +168,7 @@ class PDFService:
         # Possible Conditions
         content.append(Paragraph("🔍 Potential Areas for Your Doctor to Explore", self.styles['SectionHeader']))
         for condition in health_guide.possible_conditions:
-            content.append(Paragraph(f"• {condition}", self.styles['BodyText']))
+            content.append(Paragraph(f"• {condition}", self.styles['CustomBodyText']))
         content.append(Spacer(1, 15))
         
         # OTC Recommendations  
